@@ -26,7 +26,7 @@ namespace EMS.Application.Services
         public CustomerDTO GetCustomerById(int id)
         {
             var c = _customerRepository.GetById(id);
-            return new CustomerDTO { Name = c.Name, Email = c.Email, Mobile = c.Mobile };
+            return new CustomerDTO {Id = c.Id, Name = c.Name, Email = c.Email, Mobile = c.Mobile };
         }
 
         public void AddCustomer(CustomerDTO dto)

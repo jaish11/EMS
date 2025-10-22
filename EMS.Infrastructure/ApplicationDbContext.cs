@@ -7,6 +7,7 @@ namespace EMS.Infrastructure
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Student> Students { get; set; }
 
     }
 }
